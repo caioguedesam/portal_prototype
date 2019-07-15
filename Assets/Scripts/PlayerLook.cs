@@ -1,15 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 // This script controls a first person camera's rotation using mouse axis
 // Still has to be extended for joystick controls, using right analog stick
-// Heavily inspired by this tutorial: https://www.youtube.com/watch?v=n-KX8AeGK7E
+// Heavily based on this tutorial: https://www.youtube.com/watch?v=n-KX8AeGK7E
 
 // Caio Guedes de Azevedo Mota, 07/2019
 
 public class PlayerLook : MonoBehaviour
 {
+
     // Input variables
     [SerializeField] private string mouseXInputName, mouseYInputName;
     [Range(1f, 100f)]
@@ -20,11 +22,13 @@ public class PlayerLook : MonoBehaviour
     // Player body reference
     [SerializeField] private Transform playerBody;
 
+
     private void Awake()
     {
         LockCursor();
         xAxisClamp = 0.0f;
     }
+
 
     void Update()
     {
@@ -69,6 +73,7 @@ public class PlayerLook : MonoBehaviour
         // Rotate based on input
         transform.Rotate(Vector3.left * mouseY);
         playerBody.Rotate(Vector3.up * mouseX);
+
     }
 
     // Directly clamps x axis rotation to a specific value
