@@ -77,4 +77,5 @@ public class PlayerMove : MonoBehaviour
         controller.slopeLimit = 45f;
         isJumping = false;
     }
+    
 }
