@@ -1,6 +1,6 @@
 # Portal Prototype
 
-Unity prototype mocking Portal's portal mechanics mechanics
+Unity prototype mocking Portal's portal mechanics
 
 This was a project done for game development practice, inspired by [Mix and Jam](https://www.youtube.com/channel/UCLyVUwlB_Hahir_VsKkGPIA), a YouTube channel which uses Unity to replicate core mechanics of popular games in interesting ways.
 
