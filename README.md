@@ -10,6 +10,8 @@ This prototype is still very basic as I'm learning the engine. I would like to d
 
 This project's purpose is purely educational, and no assets or version of this project can or will be commercialized.
 
+![](portals.gif)
+
 
 # Portal Prototype (PTBR)
 
